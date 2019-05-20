@@ -64,7 +64,6 @@ init = async () => {
       // If the new card has been detected with a smaller angle than the double,
       // replace the double by this new one
       if (Math.abs(card.degrees) < Math.abs(doubles[0].degrees)) {
-        console.log('replaced ', doubles[0].degrees,  ' by ',card.degrees )
         acc[acc.indexOf(doubles[0])] = card;
       }
     }
